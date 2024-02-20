@@ -16,19 +16,19 @@ public class KaupMain {
     public static void main(String[] args) {
         double weight = rangedRandom(30, 70);
         double height = rangedRandom(1.5, 0.5);
-        double BMI = weight / (height * height);
+        double bmi = weight / (height * height);
 
-        System.out.printf("weight:%.1f height:%.1f BMI:%.1f", weight, height, BMI);
-        if (BMI >= 39) {
-            System.out.printf("\n BMI 수치 %.1f 로 고도비만입니다 ", BMI);
-        } else if (BMI >= 30) {
-            System.out.printf("\n BMI수치 %.1f 로 중도비만입니다", BMI);
-        } else if (BMI >=24) {
-            System.out.printf("\n BMI수치 %.1f 로 과체중입니다", BMI);
-        } else if(BMI >= 10){
-            System.out.printf("\n BMI수치 %.1f로 정상 체중입니다", BMI);
+        System.out.printf("weight:%.1f height:%.1f BMI:%.1f", weight, height, bmi);
+        if (bmi >= 39) {
+            System.out.printf("\n BMI 수치 %.1f 로 고도비만입니다 ", bmi);
+        } else if (bmi >= 30) {
+            System.out.printf("\n BMI수치 %.1f 로 중도비만입니다", bmi);
+        } else if (bmi >=24) {
+            System.out.printf("\n BMI수치 %.1f 로 과체중입니다", bmi);
+        } else if(bmi >= 10){
+            System.out.printf("\n BMI수치 %.1f로 정상 체중입니다", bmi);
         } else {
-            System.out.printf("\n BMI수치 %.1f로 저체중입니다", BMI);
+            System.out.printf("\n BMI수치 %.1f로 저체중입니다", bmi);
         }
     }
 }

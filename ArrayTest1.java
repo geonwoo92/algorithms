@@ -4,7 +4,6 @@ public class ArrayTest1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int a = 3;
         int[] arr = {2, 4, 6, 8, 10};
 
         System.out.println("arr 의 길이:" + arr.length);

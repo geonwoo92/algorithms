@@ -16,7 +16,7 @@ public class GradeModel {
         this.name = name;
     }
     public void createKor(){
-        this.kor = Math.floor( Math.random()*100+0);
+        this.kor = Math.floor(Math.random()*100+0);
     }
     public void createEng(){
         this.eng = Math.floor(Math.random()*100+0);

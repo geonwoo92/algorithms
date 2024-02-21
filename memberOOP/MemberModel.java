@@ -9,6 +9,19 @@ public class MemberModel {
     private String phone_number;
     private String address;
 
+
+    public MemberModel(String identification, String password,
+                       String verify_password, String name,
+                       String social_Security_Number,
+                       String phone_number, String address) {
+        this.identification = identification;
+        this.password = password;
+        this.name = name;
+        this.verify_password = verify_password;
+        this.social_Security_Number = social_Security_Number;
+        this.phone_number = phone_number;
+        this.address = address;
+    }
     public void setIdentification(String identification) {
         this.identification = identification;
     }
@@ -44,6 +57,7 @@ public class MemberModel {
     public String getPassword() {
         return password;
     }
+
     public String getVerify_password() {
         return verify_password;
     }
@@ -62,5 +76,18 @@ public class MemberModel {
 
     public String getAddress() {
         return address;
+    }
+
+    @Override
+    public String toString() {
+        return "MemberModel{" +
+                "identification='" + identification + '\'' +
+                ", password='" + password + '\'' +
+                ", verify_password='" + verify_password + '\'' +
+                ", name='" + name + '\'' +
+                ", social_Security_Number='" + social_Security_Number + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

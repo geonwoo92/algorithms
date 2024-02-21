@@ -9,7 +9,23 @@ public class MemberModel {
     private String phone_number;
     private String address;
 
+    private double height;
+    private double weight;
 
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+// 카우프 지수에서 사용하는 생성자
+    public MemberModel(double height, double weight){
+        this.height = height;
+        this.weight = weight;
+    }
+
+// 회원가입에서 사용하는 생성자
     public MemberModel(String identification, String password,
                        String verify_password, String name,
                        String social_Security_Number,
@@ -82,7 +98,6 @@ public class MemberModel {
     public String toString() {
         return "MemberModel{" +
                 "identification='" + identification + '\'' +
-                ", password='" + password + '\'' +
                 ", verify_password='" + verify_password + '\'' +
                 ", name='" + name + '\'' +
                 ", social_Security_Number='" + social_Security_Number + '\'' +
@@ -90,4 +105,6 @@ public class MemberModel {
                 ", address='" + address + '\'' +
                 '}';
     }
+
 }
+

@@ -12,7 +12,7 @@ public class ManuSelector {
             if (manu.equals("0")) {
                 System.out.println(" 종료 ");
                 return;
-                
+
             }
         }
     }

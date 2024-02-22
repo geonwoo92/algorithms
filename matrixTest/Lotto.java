@@ -13,15 +13,21 @@ public class Lotto {
     public static void main(String[] args) {
 
         int[] arr = new int[6];
-        //boolean check = false;
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (1 + Math.random() * 45);
+            boolean check = false;
+            for (int j = 0; j < i; j++) {
+                if (arr[j] == arr[i]) {
+                    check = true;
+                }
+            }
+            if (check == true) {
+                i--;
+            }
             System.out.printf(" %d ", arr[i]);
         }
-
         System.out.println();
-
         for (int i = arr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[j + 1]) {

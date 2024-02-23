@@ -12,6 +12,7 @@ package matrixTest;
 public class Lotto {
     public static void main(String[] args) {
 
+
         int[] arr = new int[6];
 
         for (int i = 0; i < arr.length; i++) {
@@ -37,6 +38,8 @@ public class Lotto {
                 }
             }
         }
+
+
         System.out.printf(" 로또 번호 ");
         for (int i = 0; i < arr.length; i++) {
             System.out.printf(" %d ", arr[i]);
@@ -44,4 +47,6 @@ public class Lotto {
 
 
     }
+
+
 }

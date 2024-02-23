@@ -15,6 +15,8 @@ public class Marix1 {
             }
         }
             for (int i = 0; i < mtx.length; i++) {
+
+
                 for (int j = 0; j < mtx[i].length; j++) {
                     System.out.print(mtx[i][j] + " ");
 

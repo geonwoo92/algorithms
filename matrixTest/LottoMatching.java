@@ -1,5 +1,7 @@
 package matrixTest;
 
+import java.util.Scanner;
+
 /**
  * 로또 발급은 같다,
  * 추가된 로직은 추첨된 로또이다
@@ -16,6 +18,10 @@ package matrixTest;
  */
 public class LottoMatching {
     public static void main(String[] args) {
+
+
+        class LottoDraw {
+        }
         int[][] mtx = new int[2][];
         int k = 0;
         for (int i = 0; i < 2; i++) {
@@ -23,22 +29,33 @@ public class LottoMatching {
             arrSort(mtx[i]);
         }
         System.out.printf("로또번호: ");
-
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 6; j++) {
-                if(mtx[i] == mtx[i]){
-
+                if (mtx[i] == mtx[i]) {
                 }
-                System.out.printf("%d " ,mtx[i][j]);
-
+                System.out.printf(" %d", mtx[i][j]);
             }
-
-
-            System.out.println();
+            System.out.println("");
         }
-
-
-
+        int count = 0;
+        for (int i = 0; i < mtx.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (mtx[i] == mtx[j]) {
+                    count++;
+                }
+                if (count < 3) {
+                    System.out.printf("꽝입니다");
+                } else if (count < 4) {
+                    System.out.printf("4등 입니다");
+                } else if (count < 5) {
+                    System.out.printf("3등 입니다");
+                } else if (count < 6) {
+                    System.out.printf("2등입니다");
+                } else {
+                    System.out.printf("1등입니다");
+                }
+            }
+        }
     }
 
     private static int[] randomLottoNumber() {
@@ -72,4 +89,3 @@ public class LottoMatching {
         }
     }
 }
-

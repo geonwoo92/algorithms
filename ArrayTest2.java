@@ -10,7 +10,7 @@ public class ArrayTest2 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("입력된 수 중에서 큰 수를 구하시오");
-        int[] arr = null;
+        int[] arr = {1,2,3};
 
         for (int i = 0; i < 2; i++) {
             System.out.println("자연수 입력 :");

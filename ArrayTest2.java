@@ -26,7 +26,7 @@ public class ArrayTest2 {
         } else {
             System.out.println(arr[0] + " 이 " + arr[1] + " 보다 작다 ");
         }
-
+        System.out.println("dd");
 
     }
 }

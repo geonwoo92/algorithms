@@ -1,4 +1,4 @@
-package matrixTest;
+package beakJoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
